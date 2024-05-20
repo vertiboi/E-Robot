@@ -1,0 +1,105 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participant Requirement</title>
+    <style>
+        html, body {
+            font-family: Arial, sans-serif;
+            background-image: url("Background.png");
+            background-repeat: no-repeat; /* Prevent background image from repeating */
+            background-size: cover; /* Scale background image to cover entire background */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            max-width: 100%;
+        }
+
+        .header img {
+            max-width: 100%;
+            height: 150px;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: fit-content; /* Maximum width for larger screens */
+            max-height: fit-content;
+            margin-top: 20px; /* Add margin between header and content */
+        }
+
+        .section {
+            width: calc(50% - 20px); /* 50% width with spacing */
+            margin: 10px;
+            text-align: center;
+        }
+
+        .section img {
+            max-width: 100%;
+            height: auto;
+            max-height: 35  0px;
+            transition: transform 0.3s;
+        }
+
+        .section img:hover {
+            transform: scale(1.1);
+        }
+
+        .text1 {
+            font-size: 24px;
+            color: #00008b;
+            text-align: justify;
+            margin-top: 60px;
+            margin-right: 35px;
+            margin-left: 20px;
+        }
+
+        .text2 {
+            font-size: 24px;
+            color: #00008b;
+            text-align: justify;
+            margin-top: 15px;
+            margin-left: 40px;
+            margin-right: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                width: calc(100% - 20px); /* Full width on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="pr.png" alt="Participant Requirement">
+        </div>
+        <div class="content">
+            <div class="section">
+                <img src="p1.png" alt="Team Icon">
+                <div class="text1">
+                    Teams will be created either in random order or based on the participants' preferences. All teams must consist of at least 3-4 members. Participants who do not have a team upon registration will be assigned to a team by the organizers.
+                </div>
+            </div>
+            <div class="section">
+                <img src="p2.png" alt="Checklist Icon">
+                <div class="text2">
+                    Each team will be given a team name and must work together throughout the competition. Participants may request to change teams prior to the start of the competition, but the organizers have the authority to deny such requests.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
